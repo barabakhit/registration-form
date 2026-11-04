@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+</head>
+<body>
+<h1>User Registration</h1>
+<form action="/register" method="POST" enctype="multipart/form-data">
+
+
+
+<fieldset>
+    <legend>Personal Information</legend>
+    <label for="fullname"> fullname:</label><br>
+
+    <input type="text" id="fullname" name="fullname" required minlength="3"> <br><br>
+    <label for="email">email:</label><br>
+    <input type="email" id="email" name="=email" required><br><br>
+    <label for="password"> password:</label>
+    <input type="password" id="password" name="password" required minlength="8"><br><br>
+    <label for="confirm-password">password</label>
+    <input type="password" id="confirm-password" name="confirm-password" required minlength="8" ><br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required ><br><br>
+</fieldset>
+
+
+<fieldset>
+    <legend>Contact Information</legend>
+    <label for="phone">phone</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="format:059-123-4567">
+     <label for="address">Adress</label><br><br>
+     <textarea  name="Adress" id="Adress" rows="3" cols="40"></textarea><br><br>
+     <label for="city">City</label><br>
+     <select name="city" id="city">
+        <option value="--select city--"></option>
+        <option value="gaza">gaza</option>
+        <option value="khan yoins">khan yoins</option>
+        <option value="rafah">rafah</option>
+        <option value="jabalia">jabalia</option>
+     </select><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>>Preferences</legend>
+        <label">Gender</label><br>
+        <input type="radio" name="gender" id="male" value="male">
+         <label for="male">male</label>   <br><br> 
+         <input type="radio" name="gender" id="famle" value="famle">
+         <label for="famle">famle</label><br><br>
+
+         <label >Interests</label><br>
+         <input type="checkbox" name="Interests" id="coding" value="coding">
+         <label for="coding">coding</label>
+         <input type="checkbox" name="interest" value="design" id="design">
+         <label for="design">design</label>
+         <input type="checkbox" id="gaming" name="interests" value="gaming">
+    <label for="gaming">Gaming</label><br>
+
+    <input type="checkbox" id="reading" name="interests" value="reading">
+    <label for="reading">Reading</label><br>
+
+    <input type="checkbox" id="sports" name="interests" value="sports">
+    <label for="sports">Sports</label><br><br>
+    <label for="skill">skill level(1-10)</label>
+    <input type="range" name="skill" id="skill" min="1" max="10" value="5"><br><br>
+
+    </fieldset>
+
+
+<fieldset>
+    <legend>Profile Picture</legend>
+    <label for="photo">Profile Picture: </label><br>
+    <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+</fieldset>
+
+<fieldset>
+    <legend>Terms & Conditions</legend>
+    
+   
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I agree to the Terms and Conditions</label><br><br>
+
+   
+    <button type="submit">Register</button>
+    <button type="reset">Clear Form</button>
+</fieldset>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
